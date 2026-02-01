@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Password Attack Simulator</title>
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/cyber.css">
+  <link rel="stylesheet" href="styles/animations.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <h1 class="glitch">PASSWORD ATTACK SIMULATOR</h1>
+    <p class="subtitle">Educational • Cyber-Grade</p>
+
+    <div class="card">
+      <label>Enter Password</label>
+      <input type="password" id="passwordInput" placeholder="Type password…" />
+      <div id="strengthMeter">
+        <div id="strengthBar"></div>
+      </div>
+      <span id="strengthText"></span>
+    </div>
+    
+
+    <div class="card">
+      <h2>Attack Models</h2>
+      <div class="checkbox-grid">
+        <label><input type="checkbox" checked> Brute Force</label>
+        <label><input type="checkbox" checked> Dictionary</label>
+        <label><input type="checkbox" checked> Hybrid</label>
+        <label><input type="checkbox" checked> Rule-Based</label>
+        <label><input type="checkbox"> Mask Attack</label>
+      </div>
+    </div>
+
+    <button id="runBtn">SIMULATE ATTACK</button>
+
+    <div class="card terminal hidden" id="terminal">
+      <pre id="terminalOutput"></pre>
+    </div>
+
+    <div class="card hidden" id="resultBox"></div>
+
+  </div>
+
+  <script src="scripts/ui.js"></script>
+  <script src="scripts/analyzer.js"></script>
+  <script src="scripts/visualizer.js"></script>
+  <script src="scripts/attack-ui.js"></script>
+</body>
+</html>

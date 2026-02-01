@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background: #0a0f14;
+  color: #e6edf3;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.app-container {
+  width: 800px;
+  margin: auto;
+  padding: 40px;
+}
+
+.card {
+  background: #0f1620;
+  border: 1px solid #1f2a36;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  background: #02070d;
+  border: 1px solid #233040;
+  color: #00ffcc;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #00ffcc;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

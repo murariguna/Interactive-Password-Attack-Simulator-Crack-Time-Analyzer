@@ -1,0 +1,31 @@
+.glitch {
+  text-align: center;
+  color: #00ffcc;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7a8f;
+  margin-bottom: 40px;
+}
+
+#strengthMeter {
+  width: 100%;
+  height: 8px;
+  background: #1c2633;
+  margin-top: 10px;
+}
+
+#strengthBar {
+  height: 100%;
+  width: 0%;
+  background: red;
+  transition: width 0.4s;
+}
+
+.terminal {
+  background: black;
+  color: #00ff00;
+  font-size: 14px;
+}
