@@ -29,31 +29,13 @@ This project is intended strictly for **educational and defensive security purpo
 
 ---
 
-## 🏗️ Architecture
-
-Frontend (Browser)
-│
-├── Password input & UI analysis
-├── Attack simulation visualization
-└── API communication (fetch)
-↓
-Backend (Python / Flask)
-│
-├── Password entropy calculation
-├── Attack feasibility estimation
-├── Dictionary & rule evaluation
-└── JSON response to frontend
-
-
----
-
 ## ⚔️ Password Attack Methods Used
 
 This project models **industry-recognized password attack techniques** used by professional security tools such as Hashcat and John the Ripper.
 
 ---
 
-### 1️⃣ Brute Force Attack
+### 1️ Brute Force Attack
 
 **Description:**  
 Attempts every possible combination of characters until the password is found.
@@ -71,7 +53,7 @@ Attempts every possible combination of characters until the password is found.
 
 ---
 
-### 2️⃣ Dictionary Attack
+### 2️ Dictionary Attack
 
 **Description:**  
 Attempts passwords from a predefined list of commonly used passwords.
@@ -96,7 +78,7 @@ Users often reuse leaked, default, or simple passwords.
 
 ---
 
-### 3️⃣ Hybrid Attack
+### 3️ Hybrid Attack
 
 **Description:**  
 Combines dictionary words with predictable modifications.
@@ -119,7 +101,7 @@ Humans modify passwords in predictable ways.
 
 ---
 
-### 4️⃣ Rule-Based Attack
+### 4️ Rule-Based Attack
 
 **Description:**  
 Applies predefined transformation rules to known words.
@@ -138,7 +120,7 @@ Applies predefined transformation rules to known words.
 
 ---
 
-### 5️⃣ Mask Attack
+### 5️ Mask Attack
 
 **Description:**  
 Targets passwords with known structural patterns.
@@ -159,7 +141,7 @@ Knowing the structure drastically reduces the search space.
 
 ---
 
-### 6️⃣ Hash-Aware Attack Modeling
+### 6️ Hash-Aware Attack Modeling
 
 **Description:**  
 The same password behaves very differently depending on how it is stored.
@@ -182,7 +164,7 @@ The same password behaves very differently depending on how it is stored.
 
 ---
 
-### 7️⃣ Attacker Capability Simulation
+### 7️ Attacker Capability Simulation
 
 **Description:**  
 Different attackers have different computational power.
